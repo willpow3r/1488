@@ -41,7 +41,7 @@ template<typename T> void sort_quick(T *A, int len, long &iter, long &cmp) {
 		}
 	} while (l <= r);
 	if (r > 0) sort_quick(A, r + 1, iter, cmp);
-	if (len - 1 > l) sort_quick(A + l, len - l, iter, cmp);
+	if (len - 1 > l) sortk(A + l, len - l, iter, cmp);
 }
 
 // explicit instantiation of template
